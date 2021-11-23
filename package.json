@@ -1,0 +1,28 @@
+{
+  "name": "strapi-plugin-cloudflare-pages",
+  "version": "0.1.0",
+  "description": "A plugin to easily trigger Cloudflare Pages builds from Strapi.",
+  "strapi": {
+    "name": "Cloudflare Pages publishing",
+    "icon": "cloud-upload-alt",
+    "description": "Publish changes via Cloudflare Pages."
+  },
+  "dependencies": {},
+  "author": {
+    "name": "Hugo Sarti",
+    "email": "sarhugo@gmail.com",
+    "url": "https://sarhugo.com"
+  },
+  "maintainers": [
+    {
+      "name": "Hugo Sarti",
+      "email": "sarhugo@gmail.com",
+      "url": "https://sarhugo.com"
+    }
+  ],
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,8 @@
+{
+  "home.title": "Publishing",
+  "home.description": "Publish changes to Cloudflare Pages",
+  "home.prompt": "Please choose which project instance do you want to deploy",
+  "home.prompt.confirm": "Are you sure you wish to publish?",
+  "home.busy": "Triggering the build, please wait.",
+  "home.button.publish": "Publish at {instance}"
+}

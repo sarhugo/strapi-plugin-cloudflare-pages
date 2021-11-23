@@ -1,0 +1,22 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/",
+      "handler": "cloudflare-pages.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/publish",
+      "handler": "cloudflare-pages.publish",
+      "config": {
+        "policies": [
+          ["admin::hasPermissions", ["plugins::cloudflare-pages.publish"]]
+        ]
+      }
+    }
+  ]
+}

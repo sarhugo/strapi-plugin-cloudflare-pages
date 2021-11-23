@@ -1,0 +1,8 @@
+{
+  "home.title": "Publicar",
+  "home.description": "Publicar cambios a Cloudflare Pages",
+  "home.prompt": "Por favor especifique que instancia del proyecto desea desplegar",
+  "home.prompt.confirm": "¿Está seguro que desea publicar los últimos cambios?",
+  "home.busy": "Disparando el build, por favor espere.",
+  "home.button.publish": "Publicar en {instance}"
+}
