@@ -1,7 +1,5 @@
 const pluginPermissions = {
-  main: [
-    { action: 'plugins::cloudflare-pages.publish', subject: null },
-  ],
+  accessMain: [{ action: 'plugin::cloudflare-pages.publish', subject: null }],
 };
 
 export default pluginPermissions;

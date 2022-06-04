@@ -5,6 +5,8 @@
 
 This is a plugin for [Strapi](https://github.com/strapi/strapi) headless CMS. It lets you easily trigger Cloudflare Pages builds from Strapi.
 
+**The main branch is compatible with Strapi v4. If you are looking for the version compatible with Strapi v3 please switch to the [v3 branch](https://github.com/sarhugo/strapi-plugin-cloudflare-pages/tree/v3).**
+
 ## Introduction
 
 ![Screenshot](./docs/screenshot.png "Plugin Screenshot")

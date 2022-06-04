@@ -1,7 +1,7 @@
 'use strict';
 
 const axios = require("axios");
-const pluginId = require("../admin/src/pluginId");
+const pluginId = require("../../admin/src/pluginId");
 
 /**
  * cloudflare-pages.js controller
@@ -9,8 +9,7 @@ const pluginId = require("../admin/src/pluginId");
  * @description: A set of functions called "actions" of the `cloudflare-pages` plugin.
  */
 
-module.exports = {
-
+ module.exports = ({ strapi }) => ({
   /**
    * Default action.
    *
@@ -18,11 +17,8 @@ module.exports = {
    */
 
   index: async (ctx) => {
-    // Add your own logic here.
-    const { instances } = strapi.plugins[
-      pluginId
-    ].config;
-    // Send 200 `ok`
+    const instances = strapi.plugins[pluginId].config("instances");
+
     ctx.send({
       instances: (instances || []).map((instance, id) => ({ id, name: instance.name }))
     });
@@ -30,9 +26,7 @@ module.exports = {
 
   publish: async (ctx) => {
     const { id } = ctx.request.body;
-    const { instances } = strapi.plugins[
-      pluginId
-    ].config;
+    const instances = strapi.plugins[pluginId].config("instances");
 
     if (instances && instances[id] && instances[id].hook_url) {
       await axios.post(instances[id].hook_url)
@@ -42,4 +36,4 @@ module.exports = {
       message: 'ok'
     });
   }
-};
+});
