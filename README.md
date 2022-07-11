@@ -42,6 +42,8 @@ Generate a config file at `config/plugins.js` or `config/development/plugins.js`
 ```javascript
 module.exports = ({ env }) => ({
   'cloudflare-pages': {
+    enabled: true,
+    resolve: "./src/plugins/cloudflare-pages",
     instances: [
       {
         name: "production website",
