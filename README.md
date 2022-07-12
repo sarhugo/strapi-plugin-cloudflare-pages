@@ -43,17 +43,18 @@ Generate a config file at `config/plugins.js` or `config/development/plugins.js`
 module.exports = ({ env }) => ({
   'cloudflare-pages': {
     enabled: true,
-    resolve: "./src/plugins/cloudflare-pages",
-    instances: [
-      {
-        name: "production website",
-        hook_url: 'https://...'
-      },
-      {
-        name: "preview website",
-        hook_url: 'https://...'
-      },
-    ]
+    config: {
+      instances: [
+        {
+          name: "production website",
+          hook_url: 'https://...'
+        },
+        {
+          name: "preview website",
+          hook_url: 'https://...'
+        },
+      ]
+    }
   }
 });
 ```
