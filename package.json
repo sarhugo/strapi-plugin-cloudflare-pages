@@ -1,6 +1,6 @@
 {
   "name": "@strapi/plugin-cloudflare-pages",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "A plugin to easily trigger Cloudflare Pages builds from Strapi.",
   "strapi": {
     "name": "cloudflare-pages",
